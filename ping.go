@@ -57,7 +57,8 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"log"
+
+	//"log"
 	"math"
 	"math/rand"
 	"net"
@@ -103,7 +104,7 @@ func New(addr string) *Pinger {
 		network:           "ip",
 		protocol:          "udp",
 		awaitingSequences: map[int]struct{}{},
-		logger:            StdLogger{Logger: log.New(log.Writer(), log.Prefix(), log.Flags())},
+		//logger:            StdLogger{Logger: log.New(log.Writer(), log.Prefix(), log.Flags())},
 	}
 }
 
@@ -457,7 +458,7 @@ func (p *Pinger) runLoop(
 			err := p.processPacket(r)
 			if err != nil {
 				// FIXME: this logs as FATAL but continues
-				logger.Fatalf("processing received packet: %s", err)
+				//logger.Fatalf("processing received packet: %s", err)
 			}
 
 		case <-interval.C:
@@ -468,7 +469,7 @@ func (p *Pinger) runLoop(
 			err := p.sendICMP(conn)
 			if err != nil {
 				// FIXME: this logs as FATAL but continues
-				logger.Fatalf("sending packet: %s", err)
+				//logger.Fatalf("sending packet: %s", err)
 			}
 		}
 		if p.Count > 0 && p.PacketsRecv >= p.Count {
@@ -535,7 +536,7 @@ func (b *expBackoff) Get() time.Duration {
 		b.c++
 	}
 
-	return b.baseDelay * time.Duration(rand.Int63n(1<<b.c))
+	return b.baseDelay * time.Duration(rand.Int63n(1<<uint64(b.c)))
 }
 
 func newExpBackoff(baseDelay time.Duration, maxExp int64) expBackoff {
