@@ -10,7 +10,7 @@ Feel free to join us in the #go-ping channel of the [Gophers Slack](https://invi
 
 ## Pull Requests
 
-[Fork the repo on GitHub](https://github.com/go-ping/ping/fork) and clone it to your local machine.
+[Fork the repo on GitHub](https://github.com/marcelmiguel/ping/fork) and clone it to your local machine.
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/ping.git && cd ping
@@ -29,7 +29,7 @@ $ git commit -s
 $ git push <FORK> <BRANCH_NAME>
 ```
 
-Open a [new pull request](https://github.com/go-ping/ping/compare) in the main `go-ping/ping` repository.
+Open a [new pull request](https://github.com/marcelmiguel/ping/compare) in the main `go-ping/ping` repository.
 Please describe the purpose of your PR and remember link it to any related issues.
 
 *We may ask you to rebase your feature branch or squash the commits in order to keep the history clean.*

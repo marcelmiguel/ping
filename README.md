@@ -1,6 +1,6 @@
 # go-ping
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/go-ping/ping)](https://pkg.go.dev/github.com/go-ping/ping)
-[![Circle CI](https://circleci.com/gh/go-ping/ping.svg?style=svg)](https://circleci.com/gh/go-ping/ping)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/marcelmiguel/ping)](https://pkg.go.dev/github.com/marcelmiguel/ping)
+[![Circle CI](https://circleci.com/gh/marcelmiguel/ping.svg?style=svg)](https://circleci.com/gh/marcelmiguel/ping)
 
 A simple but powerful ICMP echo (ping) library for Go, inspired by
 [go-fastping](https://github.com/tatsushid/go-fastping).
@@ -69,18 +69,18 @@ in which case it calls the `OnDuplicateRecv` callback. When it's
 finished, it calls the `OnFinish` callback.
 
 For a full ping example, see
-[cmd/ping/ping.go](https://github.com/go-ping/ping/blob/master/cmd/ping/ping.go).
+[cmd/ping/ping.go](https://github.com/marcelmiguel/ping/blob/master/cmd/ping/ping.go).
 
 ## Installation
 
 ```
-go get -u github.com/go-ping/ping
+go get -u github.com/marcelmiguel/ping
 ```
 
 To install the native Go ping executable:
 
 ```bash
-go get -u github.com/go-ping/ping/...
+go get -u github.com/marcelmiguel/ping/...
 $GOPATH/bin/ping
 ```
 
@@ -130,7 +130,6 @@ language.
 
 This repo was originally in the personal account of
 [sparrc](https://github.com/sparrc), but is now maintained by the
-[go-ping organization](https://github.com/go-ping).
 
 For support and help, you usually find us in the #go-ping channel of
 Gophers Slack. See https://invite.slack.golangbridge.org/ for an invite
@@ -138,4 +137,4 @@ to the Gophers Slack org.
 
 ## Contributing
 
-Refer to [CONTRIBUTING.md](https://github.com/go-ping/ping/blob/master/CONTRIBUTING.md)
+Refer to [CONTRIBUTING.md](https://github.com/marcelmiguel/ping/blob/master/CONTRIBUTING.md)

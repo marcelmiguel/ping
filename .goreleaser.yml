@@ -27,7 +27,7 @@ archives:
   wrap_in_directory: true
 # TODO: Decide if we want packages (name conflcits with /bin/ping?)
 # nfpms:
-#   homepage: https://github.com/go-ping/ping
+#   homepage: https://github.com/marcelmiguel/ping
 #   maintainer: 'Go Ping Maintainers <go-ping@example.com>'
 #   description: Ping written in Go.
 #   license: MIT
