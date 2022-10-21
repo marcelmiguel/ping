@@ -1,4 +1,4 @@
-module github.com/go-ping/ping
+module github.com/marcel.miguel/ping
 
 go 1.14
 
